@@ -2,8 +2,8 @@
 //  Ship.swift
 //  SpaceX
 //
-//  Created by Philip Engberg on 08/09/2018.
-//  Copyright © 2018 Simple Sense. All rights reserved.
+//  Created by Travis Brown on 08/09/2018.
+//  Copyright © 2018 Brown Brothers Development. All rights reserved.
 //
 
 import Foundation

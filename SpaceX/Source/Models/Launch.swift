@@ -2,8 +2,8 @@
 //  Launch.swift
 //  SpaceX
 //
-//  Created by Philip Engberg on 21/08/2018.
-//  Copyright © 2018 Simple Sense. All rights reserved.
+//  Created by Brown Brothers Development on 21/08/2018.
+//  Copyright © 2018 Travis Brown. All rights reserved.
 //
 
 import Foundation
