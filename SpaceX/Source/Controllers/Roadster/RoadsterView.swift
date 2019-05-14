@@ -3,7 +3,7 @@ import UIKit
 
 class RoadsterView: UIView {
     
-    private let roadsterImageView = UIImageView(image: #imageLiteral(resourceName: "roadster")).setUp {
+    private let roadsterImageView = UIImageView(image: #imageLiteral(resourceName: "wheretheroadster")).setUp {
         $0.contentMode = .scaleAspectFit
     }
     
@@ -16,7 +16,7 @@ class RoadsterView: UIView {
         $0.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         $0.textAlignment = .center
         $0.text = "We are updating the information every 10 minutes"
-        $0.alpha = 0.5
+        $0.alpha = 1.5
     }
     
     let spinner = UIActivityIndicatorView().setUp {
@@ -30,7 +30,7 @@ class RoadsterView: UIView {
         
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
-        gradientLayer.colors = [#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor, #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor]
+        gradientLayer.colors = [#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1).cgColor, #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1).cgColor]
         
         self.layer.addSublayer(gradientLayer)
         
