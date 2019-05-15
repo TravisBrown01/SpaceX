@@ -3,7 +3,7 @@ import UIKit
 
 class RoadsterView: UIView {
     
-    private let roadsterImageView = UIImageView(image: #imageLiteral(resourceName: "252x252")).setUp {
+    private let roadsterImageView = UIImageView(image: #imageLiteral(resourceName: "L-logo")).setUp {
         $0.contentMode = .scaleAspectFit
     }
     
