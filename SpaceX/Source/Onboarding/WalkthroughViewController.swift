@@ -30,10 +30,12 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     @IBAction func nextButtonTapped(sender: UIButton) {
         if let index = walkthroughPageViewController?.currentIndex {
             switch index {
-            case 0...1:
+            case 0...2:
                 walkthroughPageViewController?.forwardPage()
                 
-            case 2:
+            
+                
+            case 3:
                 UserDefaults.standard.set(true, forKey: "hasViewedWalkthrough")
                 dismiss(animated: true, completion: nil)
                 
@@ -47,11 +49,17 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     func updateUI() {
         if let index = walkthroughPageViewController?.currentIndex {
             switch index {
-            case 0...1:
+                
+            case 0:
+                nextButton.setTitle("GET STARTED", for: .normal)
+                skipButton.isHidden = false
+                
+            case 1...2:
                 nextButton.setTitle("NEXT", for: .normal)
                 skipButton.isHidden = false
             
-            case 2:
+                
+            case 3:
                 nextButton.setTitle("LIFT OFF", for: .normal)
                 skipButton.isHidden = true
                 

@@ -22,7 +22,7 @@ class RoadsterViewController: UIViewController {
     }
     
     private let highlihgtStyle = SwiftRichString.Style {
-        $0.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+        $0.font = UIFont.systemFont(ofSize: 15, weight: .semibold)
         $0.traitVariants = .italic
     }
     

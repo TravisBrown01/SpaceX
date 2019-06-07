@@ -11,9 +11,9 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
-    var pageHeadings = ["History of SpaceX launches", "Upcoming SpaceX missions", "Do you want to know where the Tesla Roadster is now?"]
-    var pageImages = ["onb1", "onb2", "onb3"]
-    var pageSubHeadings = ["Check, read and discover the information about all SpaceX missions", "With this application it is very easy to find out the exact date and time of the next SpaceX mission", "Every 10 minutes, the application receives data from Starman and his Tesla Roadster"]
+    var pageHeadings = ["Welcome to Space Flight Tracker", "History of SpaceX launches", "Upcoming SpaceX missions", "Do you want to know where the Tesla Roadster is now?"]
+    var pageImages = ["I-logo", "onb1", "onb2", "onb3",]
+    var pageSubHeadings = ["Developed By Brown Brothers Development", "Check, read and discover the information about all SpaceX missions", "With this application it is very easy to find out the exact date and time of the next SpaceX mission", "Every 10 minutes, the application receives data from Starman and his Tesla Roadster"]
 
     var currentIndex = 0
 
