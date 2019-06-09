@@ -30,7 +30,10 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
     @IBAction func nextButtonTapped(sender: UIButton) {
         if let index = walkthroughPageViewController?.currentIndex {
             switch index {
-            case 0...2:
+            case 0:
+                walkthroughPageViewController?.forwardPage()
+                
+            case 1...2:
                 walkthroughPageViewController?.forwardPage()
                 
             
@@ -52,12 +55,16 @@ class WalkthroughViewController: UIViewController, WalkthroughPageViewController
                 
             case 0:
                 nextButton.setTitle("GET STARTED", for: .normal)
-                skipButton.isHidden = false
+                skipButton.isHidden = true
                 
-            case 1...2:
+            case 1:
                 nextButton.setTitle("NEXT", for: .normal)
                 skipButton.isHidden = false
-            
+
+            case 2:
+                nextButton.setTitle("NEXT", for: .normal)
+                skipButton.isHidden = false
+
                 
             case 3:
                 nextButton.setTitle("LIFT OFF", for: .normal)
