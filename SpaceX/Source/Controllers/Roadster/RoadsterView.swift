@@ -12,11 +12,11 @@ class RoadsterView: UIView {
     }
     
     private let updatedLabel = UILabel().setUp {
-        $0.font = UIFont.italicSystemFont(ofSize: 11)
+        $0.font = UIFont.italicSystemFont(ofSize: 14)
         $0.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
         $0.textAlignment = .center
         $0.text = "We are updating the information every 10 minutes"
-        $0.alpha = 0.5
+        $0.alpha = 0.8
     }
     
     let spinner = UIActivityIndicatorView().setUp {
