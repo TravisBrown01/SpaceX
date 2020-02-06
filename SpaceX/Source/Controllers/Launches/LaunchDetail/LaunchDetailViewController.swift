@@ -121,8 +121,6 @@ extension LaunchDetailViewController: UITableViewDataSource {
 extension LaunchDetailViewController: UITableViewDelegate {
     
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            guard let destination = viewModel.sections.value[indexPath.section - 1].properties[indexPath.row].detail else { return }
-            Router.route(to: destination)
         }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -13,7 +13,7 @@ class LaunchesView: UIView {
     }
     
     let segmentedControl = UISegmentedControl(items: ["History", "Upcoming"]).setUp {
-        $0.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        $0.backgroundColor = .white
     }
     
     override init(frame: CGRect) {
