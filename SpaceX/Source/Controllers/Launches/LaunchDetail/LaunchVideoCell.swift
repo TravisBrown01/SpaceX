@@ -12,13 +12,18 @@ class LaunchVideoCell: UITableViewCell {
         $0.isHidden = true
         $0.textAlignment = .center
     }
+    let logoImageView = UIImageView().setUp {
+    $0.contentMode = .scaleToFill
+    $0.image = #imageLiteral(resourceName: "b-logo")
+    $0.isHidden = true
+    }
     
     private let playerView = YTPlayerView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        contentView.addSubviews([noVideoYetLabel, playerView])
+        contentView.addSubviews([noVideoYetLabel, playerView, logoImageView])
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,6 +35,7 @@ class LaunchVideoCell: UITableViewCell {
         
         playerView.frame = contentView.bounds
         noVideoYetLabel.frame = contentView.bounds
+        logoImageView.frame = contentView.bounds
     }
     
     func configure(with videoId: String) {
@@ -41,5 +47,9 @@ class LaunchVideoCell: UITableViewCell {
     func showEmpty() {
         noVideoYetLabel.isHidden = false
     }
+    func showImage() {
+    logoImageView.isHidden = false
+    }
+    
     
 }

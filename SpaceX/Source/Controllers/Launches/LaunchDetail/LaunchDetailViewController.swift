@@ -91,7 +91,7 @@ extension LaunchDetailViewController: UITableViewDataSource {
             if let videoId = viewModel.object.value?.links?.youTubeVideoId {
                 cell.configure(with: videoId)
             } else {
-                cell.showEmpty()
+                cell.showImage()
                 cell.isUserInteractionEnabled = false
             }
             return cell
