@@ -128,7 +128,8 @@ infix operator &&& : LogicalConjunctionPrecedence
 public func &&& <L: ResultProtocol, R: ResultProtocol> (left: L, right: @autoclosure () -> R) -> Result<(L.Value, R.Value), L.Error>
 	where L.Error == R.Error
 {
-	return left.fanout(right)
+	//return left.fanout(right)
+return left.flatMap { left in right().map { right in (left, right) } }
 }
 
 precedencegroup ChainingPrecedence {

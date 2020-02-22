@@ -86,7 +86,7 @@ class Router {
                 }
                 
             case .tab(let tab):
-                guard let tabController = WindowManager.shared.tabBarController, let index = WindowManager.shared.tabs.index(of: tab) else { return false }
+                guard let tabController = WindowManager.shared.tabBarController, let index = WindowManager.shared.tabs.firstIndex(of: tab) else { return false }
                 if let top = WindowManager.topMostViewController(), top.presentingViewController != nil {
                     top.dismiss(animated: true, completion: nil)
                     tabController.selectedIndex = index

@@ -78,7 +78,7 @@ class WindowManager {
     }
     
     func rootViewController(for tab: Tab) -> UIViewController? {
-        guard let index = tabs.index(of: tab) else { return nil }
+        guard let index = tabs.firstIndex(of: tab) else { return nil }
         guard let navigationController = tabBarController?.viewControllers?.at(index) as? UINavigationController else { return nil }
         return navigationController.viewControllers.first
     }
