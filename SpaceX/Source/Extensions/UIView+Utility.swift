@@ -1,6 +1,7 @@
 
 import Foundation
 import UIKit
+import WebKit
 
 extension UIView {
     internal func addSubviews(_ subviews: [UIView] ) {

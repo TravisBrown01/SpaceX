@@ -1,0 +1,44 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  },
+  "stickers" : [
+    {
+      "filename" : "Planet1.sticker"
+    },
+    {
+      "filename" : "Planet2.sticker"
+    },
+    {
+      "filename" : "Planet3.sticker"
+    },
+    {
+      "filename" : "Planet4.sticker"
+    },
+    {
+      "filename" : "Planet5.sticker"
+    },
+    {
+      "filename" : "Planet6.sticker"
+    },
+    {
+      "filename" : "Planet7.sticker"
+    },
+    {
+      "filename" : "Planet11.sticker"
+    },
+    {
+      "filename" : "Planet8.sticker"
+    },
+    {
+      "filename" : "Planet9.sticker"
+    },
+    {
+      "filename" : "Planet10.sticker"
+    }
+  ]
+}

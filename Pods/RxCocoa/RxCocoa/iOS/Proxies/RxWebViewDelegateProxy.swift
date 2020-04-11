@@ -10,6 +10,7 @@
 
 import UIKit
 import RxSwift
+import WebKit
 
 extension UIWebView: HasDelegate {
     public typealias Delegate = UIWebViewDelegate

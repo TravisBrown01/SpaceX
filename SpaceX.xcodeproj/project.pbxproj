@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1E9B04D1EC7046190A5C92E2 /* Pods_SpaceXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0EE27A97D057DC46F20255 /* Pods_SpaceXUITests.framework */; };
+		2F1F433A244039E000236A81 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F4339244039E000236A81 /* Stickers.xcassets */; };
+		2F1F433E244039E000236A81 /* Flight Tracker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2F1F4337244039DF00236A81 /* Flight Tracker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5940A51C229A32C70046579D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5940A51B229A32C70046579D /* Assets.xcassets */; };
 		AD46DB136876D803C1BE948D /* Pods_SpaceXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B709E78199FC9E4C8308B97 /* Pods_SpaceXTests.framework */; };
 		C69EA02E2237FF4D001DD517 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C69EA02A2237FF4C001DD517 /* Onboarding.storyboard */; };
@@ -84,6 +86,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2F1F433C244039E000236A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4155134212B02C9008848DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F1F4336244039DF00236A81;
+			remoteInfo = "Space Stickers";
+		};
 		D4155151212B02CA008848DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D4155134212B02C9008848DE /* Project object */;
@@ -100,9 +109,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2F1F433F244039E000236A81 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2F1F433E244039E000236A81 /* Flight Tracker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0D3FCA18844C1C8304D3F3F5 /* Pods-SpaceX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceX/Pods-SpaceX.debug.xcconfig"; sourceTree = "<group>"; };
 		2566B3262E5A400230925B88 /* Pods-SpaceXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceXTests/Pods-SpaceXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F1F4337244039DF00236A81 /* Flight Tracker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Flight Tracker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F1F4339244039E000236A81 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		2F1F433B244039E000236A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D02D1CF45F85F16E5183947 /* Pods-SpaceXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpaceXUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpaceXUITests/Pods-SpaceXUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5940A51B229A32C70046579D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B709E78199FC9E4C8308B97 /* Pods_SpaceXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +243,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1F4338244039DF00236A81 /* Space Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F4339244039E000236A81 /* Stickers.xcassets */,
+				2F1F433B244039E000236A81 /* Info.plist */,
+			);
+			path = "Space Stickers";
+			sourceTree = "<group>";
+		};
 		C69EA0292237FF3B001DD517 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +279,7 @@
 				D415513E212B02C9008848DE /* SpaceX */,
 				D4155153212B02CA008848DE /* SpaceXTests */,
 				D415515E212B02CA008848DE /* SpaceXUITests */,
+				2F1F4338244039DF00236A81 /* Space Stickers */,
 				D415513D212B02C9008848DE /* Products */,
 				FC7167A9CCCE287D88EC11A9 /* Pods */,
 				D246A04810B08BDD426B7157 /* Frameworks */,
@@ -256,6 +292,7 @@
 				D415513C212B02C9008848DE /* SpaceX.app */,
 				D4155150212B02CA008848DE /* SpaceXTests.xctest */,
 				D415515B212B02CA008848DE /* SpaceXUITests.xctest */,
+				2F1F4337244039DF00236A81 /* Flight Tracker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -544,6 +581,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2F1F4336244039DF00236A81 /* Space Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F1F4342244039E000236A81 /* Build configuration list for PBXNativeTarget "Space Stickers" */;
+			buildPhases = (
+				2F1F4335244039DF00236A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Stickers";
+			productName = "Space Stickers";
+			productReference = 2F1F4337244039DF00236A81 /* Flight Tracker.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		D415513B212B02C9008848DE /* SpaceX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4155164212B02CA008848DE /* Build configuration list for PBXNativeTarget "SpaceX" */;
@@ -553,10 +605,12 @@
 				D4155139212B02C9008848DE /* Frameworks */,
 				D415513A212B02C9008848DE /* Resources */,
 				E34626F6A0AC459BF81BDA8B /* [CP] Embed Pods Frameworks */,
+				2F1F433F244039E000236A81 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2F1F433D244039E000236A81 /* PBXTargetDependency */,
 			);
 			name = SpaceX;
 			productName = SpaceX;
@@ -611,6 +665,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Travis Brown";
 				TargetAttributes = {
+					2F1F4336244039DF00236A81 = {
+						CreatedOnToolsVersion = 11.4;
+					};
 					D415513B212B02C9008848DE = {
 						CreatedOnToolsVersion = 9.4.1;
 						LastSwiftMigration = 1130;
@@ -641,11 +698,20 @@
 				D415513B212B02C9008848DE /* SpaceX */,
 				D415514F212B02CA008848DE /* SpaceXTests */,
 				D415515A212B02CA008848DE /* SpaceXUITests */,
+				2F1F4336244039DF00236A81 /* Space Stickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2F1F4335244039DF00236A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F1F433A244039E000236A81 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D415513A212B02C9008848DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -872,6 +938,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2F1F433D244039E000236A81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F1F4336244039DF00236A81 /* Space Stickers */;
+			targetProxy = 2F1F433C244039E000236A81 /* PBXContainerItemProxy */;
+		};
 		D4155152212B02CA008848DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D415513B212B02C9008848DE /* SpaceX */;
@@ -896,6 +967,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2F1F4340244039E000236A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = F94TXQEVFZ;
+				INFOPLIST_FILE = "Space Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brownbrothersdevelopment.SpaceX.Space-Stickers";
+				PRODUCT_NAME = "Flight Tracker";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F1F4341244039E000236A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = F94TXQEVFZ;
+				INFOPLIST_FILE = "Space Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MARKETING_VERSION = 1.0.6;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brownbrothersdevelopment.SpaceX.Space-Stickers";
+				PRODUCT_NAME = "Flight Tracker";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		D4155162212B02CA008848DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1017,7 +1127,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = F94TXQEVFZ;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -1025,7 +1135,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brownbrothersdevelopment.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1042,7 +1152,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = F94TXQEVFZ;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
@@ -1050,7 +1160,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.0.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.brownbrothersdevelopment.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1145,6 +1255,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2F1F4342244039E000236A81 /* Build configuration list for PBXNativeTarget "Space Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F1F4340244039E000236A81 /* Debug */,
+				2F1F4341244039E000236A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D4155137212B02C9008848DE /* Build configuration list for PBXProject "SpaceX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,7 +14,7 @@ class LaunchVideoCell: UITableViewCell {
     }
     let logoImageView = UIImageView().setUp {
     $0.contentMode = .scaleToFill
-    $0.image = #imageLiteral(resourceName: "b-logo")
+    $0.image = #imageLiteral(resourceName: "a-logo")
     $0.isHidden = true
     }
     
